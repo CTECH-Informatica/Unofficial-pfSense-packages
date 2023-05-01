@@ -12,14 +12,8 @@ The wpad package confgigures antoher nginx http instance to host wpad file and p
 
 # Install instructions
 
-If you enabled the Unofficial repo, you can add this package under System -> Package Manager
+Add it under console/ssh:
 
-Or add it under console/ssh.
-
-cd /root
-
-fetch https://raw.githubusercontent.com/marcelloc/Unofficial-pfSense-packages/master/pkg-wpad/files/install_wpad_23.sh
-
-sh ./install_wpad_23.sh
+cd /root && fetch https://raw.githubusercontent.com/caiqueportela/Unofficial-pfSense-packages/master/pkg-wpad/files/install_wpad_amd64.sh && sh ./install_wpad_amd64.sh
 
 Once it finishes, all must be in place. If you do not see the menu after it finishes, try to install any pfSense package from GUI, like cron for example.
