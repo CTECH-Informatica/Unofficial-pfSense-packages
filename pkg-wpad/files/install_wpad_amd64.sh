@@ -19,7 +19,8 @@
 # * See the License for the specific language governing permissions and
 # * limitations under the License.
 
-version="1.0.4" 
+pkg_version="1.0.4" 
+sys_version="$(uname -K | cut -c 1-2)"
 echo `uname -m` system
 
-pkg add https://github.com/caiqueportela/Unofficial-pfSense-packages/raw/master/repo/FreeBSD:12:amd64/pfSense-pkg-WPAD-${version}.txz
+pkg add https://github.com/caiqueportela/Unofficial-pfSense-packages/raw/master/repo/FreeBSD:${sys_version}:amd64/pfSense-pkg-WPAD-${pkg_version}.txz
