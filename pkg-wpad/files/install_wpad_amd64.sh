@@ -23,4 +23,4 @@ pkg_version="1.0.4"
 sys_version="$(uname -K | cut -c 1-2)"
 echo `uname -m` system
 
-IGNORE_OSVERSION=yes pkg add https://github.com/CTECH-Informatica/Unofficial-pfSense-packages/raw/master/repo/FreeBSD:${sys_version}:amd64/pfSense-pkg-WPAD-${pkg_version}.txz
+IGNORE_OSVERSION=yes pkg add https://github.com/CTECH-Informatica/Unofficial-pfSense-packages/raw/master/repo/FreeBSD:${sys_version}:amd64/pfSense-pkg-WPAD-${pkg_version}.pkg
